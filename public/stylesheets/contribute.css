@@ -1,0 +1,538 @@
+*{margin: 0;padding: 0px;}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #efefef;
+    color: white;
+    font: 12px/1.5 PingFangSC-Regular,Tahoma,'Microsoft Yahei',sans-serif;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.flex_around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+.index{
+    /*margin: 0 120px;*/
+    position: relative;
+}
+header{
+    height: 144px;
+    position: relative;
+}
+.content_l{
+    width: 420px;
+    height: 135px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 4.5px;
+}
+.logol{
+    width: 170px;
+    height: 135px;
+    overflow: hidden;
+    float: left;
+}
+.personal{
+    width: 230px;
+    height: 135px;
+    float: left;
+    margin-left: 20px;
+}
+.personal h2{
+    margin-top: 70px;
+}
+.personal div{
+    margin-top: 20px;
+}
+.textbox{
+    width: 300px;
+    height: 144px;
+    float: right;
+    z-index: 2;
+    position: absolute;
+    right: 100px;
+}
+.textbox li{
+    text-align: right;
+    font-size: 15px;
+    margin-top: 20px;
+}
+#logor{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/indexbookcut.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 180%;
+    z-index: 1;
+}
+.tips{
+    width: 425px;
+    height: 144px;
+}
+.imglogo{
+    width: 129px;
+    height: 115px;
+    float: right;
+}
+nav{
+    height: 50px;
+    position: relative;
+    background-color: #FFFFE0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+#navul{
+    width: 60%;
+    height: 144px;
+}
+#navul li{
+    width: 16%;
+    height: 50px;
+    float: left;
+    /*overflow: hidden;*/
+    text-align: center;
+    border-right: 1px solid #FFFFE0;
+
+}
+#navul li div{
+    position: relative;
+}
+#navul li div a{
+    width:100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+#navul li:nth-child(2) div:nth-child(2) a:nth-child(1){
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(2) div:nth-child(2) a:nth-child(2){
+    top: 50px;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(2) div:nth-child(2) a:nth-child(3){
+    top: 100px;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(3) div:nth-child(2) a:nth-child(1){
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(3) div:nth-child(2) a:nth-child(2){
+    top: 50px;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(3) div:nth-child(2) a:nth-child(3){
+    top: 100px;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:nth-child(3) div:nth-child(2) a:nth-child(4){
+    top: 150px;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li:hover{
+    /*border-radius: 60% 0;*/
+    background-color: #EBC79E;
+}
+#navul li div:nth-child(1){
+    width: 100%;
+    height: 50px;
+    /*border: 1px solid red;*/
+}
+#navul li div:nth-child(1) a{
+    line-height: 50px;
+    font-size: 16px;
+    color: black;
+}
+#navul li div:nth-child(2){
+    width: 100%;
+    /*height: 50px;*/
+    /*border: 1px solid blue;*/
+    display: none;
+    background-color:rgba(235,199,158,0.4);
+}
+#navul li div:nth-child(2) a{
+    width: 100%;
+    height: 50px;
+    color:black;
+    font-size: 16px;
+    line-height: 50px;
+    display: block;
+
+    /*border: 1px solid blue;*/
+}
+nav .signin{
+    top: 0;
+    min-width: 5%;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+}
+nav .signin a:nth-child(1){
+    /*position: absolute;*/
+    width: 80px;
+    height: 50px;
+    /*right: 80px;*/
+    font-size: 16px;
+    line-height: 50px;
+    margin-right: 5px;
+    color: #00a67c;
+    text-align:center;
+}
+nav .signin a:nth-child(2){
+    /*position: absolute;*/
+    min-width: 120px;
+    height: 50px;
+    /*right: 0;*/
+    font-size: 16px;
+    line-height: 50px;
+    color: #00a67c;
+    text-align:center;
+}
+nav .signin a:nth-child(2) p{
+    display: inline;
+}
+#navul li:nth-child(1){
+    background-color: #EBC79E;
+}
+article{
+    width: 68%;
+    height: 1300px;
+    color:#777;
+    font-size: 15px;
+}
+article ul{
+    position: absolute;
+    margin-top: 10px;
+    /*z-index: 4;*/
+}
+article ul li{
+    width: 100%;
+    height:60px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+article ul li:nth-child(6){
+    height:520px;
+}
+article ul li span{
+    float: left;
+}
+article ul li div{
+    float: left;
+}
+article ul li div input{
+    width: 350px;
+    height:25px;
+    display: block;
+}
+.form_textarea{
+    width: 350%;
+    height: 500px;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+}
+article ul li div span{
+    font-size: 12px;
+    margin-top: 5px;
+}
+article ul li:nth-child(7) input:nth-child(1){
+    /*float: left;*/
+    display: inline;
+    position: absolute;
+    /*background-color: lightblue;*/
+    width: 70px;
+    height:35px;
+    left: 196px;
+    top: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+article ul li:nth-child(7) input:nth-child(2){
+    /*float: left;*/
+    display: inline;
+    position: absolute;
+    /*background-color: lightgreen;*/
+    width: 70px;
+    height:35px;
+    left: 420px;
+    top: 20px;
+    border-radius: 5px;
+    outline: none;
+
+}
+.else{
+    width: 29%;
+    height: 1300px;
+}
+.focusbork{
+    width: 100%;
+    height: 290px;
+    color: black;
+}
+.focusbork header{
+    width: 100%;
+    height: 30px;
+    border-left: 2px solid #00a67c;
+}
+.focusbork header span{
+    font-size: 16px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.focusbork .content{
+    width: 220px;
+    height: 150px;
+    margin: 10px auto;
+}
+.focusbork .content li{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #555;
+    line-height: 30px;
+}
+.focusbork .content li:nth-child(1) a{
+    position: absolute;
+    width: 116px;
+    height: 30px;
+    margin-left: 4px;
+    background-image: url(../images/indexbling.png);
+}
+.focusbork .content li:nth-child(2) a{
+    position: absolute;
+    width: 91px;
+    height: 30px;
+    margin-left: 15px;
+    background-position: -116px 2px;
+    background-image: url(../images/indexbling.png);
+}
+.focusbork .content li:nth-child(3) a{
+    position: absolute;
+    width: 95px;
+    height: 30px;
+    background-position: -208px 2px;
+    background-image: url(../images/indexbling.png);
+}
+.focusbork .content li:nth-child(4) a{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
+    background-image: url(../images/indexwechat.jpg);
+    background-size: 100%;
+}
+.focusbork .content li:nth-child(5) a{
+    position: absolute;
+    width: 62px;
+    height: 22px;
+    margin-top: 4px;
+    margin-left: 4px;
+    background-image: url(../images/indexweibo.jpg);
+}
+.click_rank{
+    width: 100%;
+    height: 290px;
+    color: black;
+}
+.click_rank header{
+    width: 100%;
+    height: 30px;
+    border-left: 2px solid #00a67c;
+}
+.click_rank header span{
+    font-size: 16px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.click_rank ul{
+    width: 220px;
+    height: 250px;
+    margin: 10px auto;
+}
+.click_rank li{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    color: #555;
+    line-height: 30px;
+    position: relative;
+    margin-top: 5px;
+}
+.click_rank li span{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    margin-top: 5px;
+    color: white;
+    border-radius: 3px;
+}
+.click_rank li a{
+    font-size: 12px;
+}
+.click_rank li:nth-child(1) span{
+    background-color: #525252;
+}
+.click_rank li:nth-child(2) span{
+    background-color: #CFB53B;
+}
+.click_rank li:nth-child(3) span{
+    background-color: #F40;
+}
+.click_rank li:nth-child(4) span{
+    background-color: orange;
+}
+.click_rank li:nth-child(5) span{
+    background-color: #63B6F7;
+}
+.click_rank li:nth-child(6) span{
+    background-color: #ccc;
+}
+
+.click_rank li a{
+    position: absolute;
+    left: 30px;
+    color: #545151;
+}
+.click_rank li a:hover{
+    text-decoration: underline;
+    color: #F40;
+}
+.tags{
+    width: 100%;
+    height: 290px;
+    color: black;
+}
+.tags header{
+    width: 100%;
+    height: 30px;
+    border-left: 2px solid #00a67c;
+}
+.tags header span{
+    font-size: 16px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.tags ul{
+    width: 220px;
+    min-height: 250px;
+    margin: 10px auto;
+}
+.tags li{
+    /*position: relative;*/
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    /*background-color: #145845;*/
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tags li:hover{
+    color: white;
+    background-color: #F40;
+}
+.tags a{
+    color: white;
+}
+.sharelink{
+    width: 100%;
+    height: 290px;
+    color: black;
+}
+.sharelink header{
+    width: 100%;
+    height: 30px;
+    border-left: 2px solid #00a67c;
+}
+.sharelink header span{
+    font-size: 16px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.sharelink ul{
+    width: 220px;
+    height: 250px;
+    margin: 10px auto;
+}
+.sharelink li{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.sharelink li:hover{
+    color: white;
+    border-radius: 50px;
+    background-color: #F40;
+}
+.sharelink a{
+    color: #555;
+}
+footer{
+    height: 50px;
+    color: #f16e50;
+    font-size: 14px;
+    background-color: #242221;;
+}
+.footer_center{
+    margin: 0 auto;
+    line-height: 50px;
+}
+.return{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: rgba(233, 126, 103, 1);
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 8px;
+    transition: all 1s;
+}
+.return:hover{
+    background-color: #72d0eb;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

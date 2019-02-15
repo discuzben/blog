@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前台登录界面</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/signin.css">
+	<script type="text/javascript" src="https://at.alicdn.com/t/font_400236_riihu7enldlk57b9.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/signin.js"></script>
+	<script>
+		$(function () {
+            $("#sii").click(function () {
+                var username=$("#un").val().trim();
+                var password=$("#pwd").val().trim();
+                $.post('../usersignin',
+                    {
+                        'username':username,
+                        'password':password
+                    },
+                    function (data,status) {
+                        var result=JSON.parse(data);
+                        if(result.result){
+                            $.post('../usersignin_normal',function (data,status) {
+
+                            });
+                            $.post('../usersignin_selected',{
+                                'username':username,
+                                'password':password
+                            },function (data,status) {
+                                console.log("ss");
+                            });
+                            location.href=`index.html`
+                        }else{
+                            alert('用户名或密码错误，请重新输入');
+                        }
+                    }
+                )
+            });
+        });
+	</script>
+</head>
+<body>
+	<div id="signin">
+		<div id="signin_center">
+			<div id="box">
+				<div id="container">
+					<div id="container-center">
+						<p id="icon-box1">
+							<input id="un" type="text" name="username"
+								   value="" placeholder="用户名">
+						<div class="icon-user">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-yonghuming-copy"></use>
+							</svg>
+						</div>
+						</p>
+
+						<p id="icon-box2">
+							<input id="pwd" type="password" name="password" placeholder="密码">
+						<div class="icon-pwd">
+							<svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-mima-copy-copy"></use>
+							</svg>
+						</div>
+						</p>
+
+						<input id="sii" type="submit" value="登录" name="submit" alt="点击登录">
+						<input id="btn-reset" type="reset" name="reset">
+					</div>
+				</div>
+				<div id="headimg"><img id="himg" src="images/headimg.JPG"></div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

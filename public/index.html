@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LG个人博客-关注跨平台技术与游戏开发</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://at.alicdn.com/t/font_400236_ala6yuh57bs7zaor.js"></script>
+	<script type="text/javascript" src="javascripts/index_banner.js"></script>
+	<script type="text/javascript" src="javascripts/index_clock.js"></script>
+	<script type="text/javascript" src="javascripts/index.js"></script>
+	<script type="text/javascript" src="javascripts/index_article.js"></script>
+	<script type="text/javascript" src="javascripts/nav_article_click.js"></script>
+	<script type="text/javascript" src="javascripts/usersignin_username.js"></script>
+
+</head>
+<body>
+	<div class="index">
+		<header class="flex_around">
+			<div class="content_l">
+				<div class="logol">
+					<img src="images/indexlogol.png">
+				</div>
+				<div class="personal">
+					<h2>罗广的个人博客</h2>
+					<div>关注跨平台技术与游戏开发</div>
+				</div>
+			</div>
+			<div class="textbox">
+				<ul>
+				<li>最怕一生碌碌无为，还说平凡难能可贵!</li>
+				<li>摘自----网易云音乐</li>
+				</ul>
+			</div>
+			<div id="logor"></div>
+		</header>
+		<nav>
+			<ul id="navul">
+				<li><div><a href="index.html">网站首页</a></div></li>
+				<li>
+					<div><a href="classification.html">生活笔记</a></div>
+					<div>
+						<a href="classification.html">个人随笔</a>
+						<a href="classification.html">个人日记</a>
+						<a href="personal_detail.html">个人介绍</a>
+					</div>
+				</li>
+				<li>
+					<div><a href="classification.html">技术杂谈</a></div>
+					<div>
+						<a  href="classification.html">mysql</a>
+						<a  href="classification.html">jquery</a>
+						<a  href="classification.html">css3</a>
+						<a  href="classification.html">node.js</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a  href="classification.html">IT资讯</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a  href="support.html">赞助作者</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a  href="leave_message.html">给我留言</a>
+					</div>
+				</li>
+			</ul>
+			<div class="signin">
+				<a href="contribute.html">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-tougao"></use>
+					</svg>
+					投稿
+				</a>
+				<a href="signin.html">
+					<svg class="icon" aria-hidden="true">
+					    <use xlink:href="#icon-kaiguan"></use>
+					</svg>
+				<p></p>
+				</a>
+			</div>
+		</nav>
+		<div class="container flex_between">
+			<div id="pictures">
+				<div id="prev"><</div>
+				<ul id="viewlist">
+					<li><img src="images/index1.jpg"></li>
+					<li><img src="images/index2.jpg"></li>
+					<li><img src="images/index3.jpg"></li>
+					<li><img src="images/index4.jpg"></li>
+					<li><img src="images/index1.jpg"></li>
+				</ul>
+				<div id="next">></div>
+				<ul id="list">
+					<li class="select"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<aside id="blackboard">
+				<p>世上的路从来不止一条,这条走不通,不要钻牛角尖，最好换一条!</p>
+				<!--<div id="box">-->
+					<!--<canvas width="100px" height="100px"></canvas>-->
+				<!--</div>-->
+			</aside>
+		</div>
+		<div class="video_content">
+			<div class="video_head flex_between">
+				<div class="video_head_fl">
+					<p class="pl">
+					<span>视频分享</span>
+					video sharing
+					</p>
+				</div>
+				<div class="video_head_fr">
+					<p class="pr">
+					<span>视频列表</span>
+					video list
+					</p>
+				</div>
+			</div>
+			<div class="video_shar_list flex_between">
+				<div class="personal_video flex_around">
+					<ul class="flex_around">
+						<li onmouseover="playVid(video1)" onmouseout="pauseVid(video1)">
+							<video id="video1" src="videos/mov_bbb.mp4"></video>
+							<p><span>蝴蝶与苹果的迷之相遇</span>因为刚好遇见你，大胖子的悲伤往事</p>
+						</li>
+						<li onmouseover="playVid(video2)" onmouseout="pauseVid(video2)">
+							<video id="video2" src="videos/h和p标签的使用.mp4"></video>
+							<p><span>h和p标签的使用</span>全程教学</p>
+						</li>
+						<li onmouseover="playVid(video3)" onmouseout="pauseVid(video3)">
+							<video id="video3" src="videos/img标签的使用.mp4"></video>
+							<p><span>img标签的使用</span>全程教学</p>
+						</li>
+						<script>
+                            var video1=document.getElementById("video1");
+                            var video2=document.getElementById("video2");
+                            var video3=document.getElementById("video3");
+                            function playVid(videonum)
+                            {
+                                videonum.play();
+                            }
+
+                            function pauseVid(videonum)
+                            {
+                                videonum.pause();
+                            }
+						</script>
+					</ul>
+				</div>
+
+				<div class="video_list">
+					<ul>
+						<li>第一课：<a href="">HTML基本骨架</a></li>
+						<li>第二课：<a href="">h和p标签的使用</a></li>
+						<li>第三课：<a href="">img标签的使用</a></li>
+						<li>第四课：<a href="">超级链接</a></li>
+						<li>第五课：<a href="">列表</a></li>
+						<li>第六课：<a href="">表单</a></li>
+						<li>第七课：<a href="">div和span</a></li>
+						<li>第八课：<a href="">常见属性</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="font flex_between">
+			<article>
+				<ul>
+				</ul>
+				<p class="nextpage"><span>下一页>></span></p>
+			</article>
+			<div class="else">
+				<div class="focusbork">
+					<header><span>关注博客</span></header>
+					<div class="content">
+						<ul>
+							<li>
+								邮箱订阅：<a target="_blank" href="http://gd.passport.189.cn/UDBSelf/" title="17759500581@189.cn"></a>
+							</li>
+							<li>
+								QQ联系：<a target="_blank" href="https://connect.qq.com/widget/wpa/chat.html?tuin=947580181&sigT=3aecd35d8dbc5f1fd2262b348d5040a80fc8ea396f287efeae14595aef90a4eb2feaa6093041702f17d840ded14de3c8&sigU=37ea7a757a254e6cec1948dda22fd0e1cba6c068f017157081f32e51921b341334ade9e5f510f24b" title="LG的QQ1281696080"></a>
+							</li>
+							<li>
+								加入QQ群：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5hFMpU9" title="QQ交流群570946165"></a>
+							</li>
+							<li>
+								微信联系：<a target="_blank" href="https://wx.qq.com/" title="LG的微信17759500581"></a>
+							</li>
+							<li>
+								关注微博：<a target="_blank" href="http://weibo.com/u/5315384135/home?topnav=1&wvr=6" title="关注LG的新浪微博17759500581"></a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+				<div class="click_rank">
+					<header><span>点击排行榜</span></header>
+					<ul>
+						<li>
+							<span>1</span><a  href="article_detail.html"></a>
+							</li>
+						<li>
+							<span>2</span><a  href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>3</span><a  href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>4</span><a  href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>5</span><a  href="article_detail.html" title="55555555555"></a>
+						</li>
+						<li>
+							<span>6</span><a  href="article_detail.html" title="66666666666"></a>
+						</li>
+					</ul>	
+				</div>
+				<div class="tags">
+					<header><span>标签云</span></header>
+					<ul>
+						<li>
+							<a href="classification.html">css</a>
+						</li>
+						<li>
+							<a href="classification.html">html</a>
+						</li>
+						<li>
+							<a href="classification.html">javascript</a>
+						</li>
+						<li>
+							<a href="classification.html">html5</a>
+						</li>
+						<li>
+							<a href="classification.html">css3</a>
+						</li>
+						<li>
+							<a href="classification.html">node.js</a>
+						</li>
+						<li>
+							<a href="classification.html">mysql</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sharelink">
+					<header><span>友情链接</span></header>
+					<ul>
+						<li>
+							<a target="_blank" href="http://v5dyw.com/">v5订阅网</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.phpernote.com/">PHP程序员的笔记</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://ip.zdaye.com/">代理IP</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.sucaihuo.com/">html5网站模板</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.weixianmanbu.com/">黑客技术博客</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.5imb.com/">网站模板</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.php230.com/">IT程序员</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.aiihu.cn/">爱虎网</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.itjie.com/">IT业界</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://nodejs.org/en/">Node.js</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.npmjs.com/">npmjs</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.iconfont.cn/">iconfont矢量图标</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="flex_between">
+		<div class="footer_center">design by:LG</div>
+	</footer>
+	<button href="" class="return">^</button>
+</body>
+</html>

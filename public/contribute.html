@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LG个人博客-关注跨平台技术与游戏开发</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/contribute.css">
+	<script type="text/javascript"  src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://at.alicdn.com/t/font_400236_ala6yuh57bs7zaor.js"></script>
+	<script type="text/javascript" src="javascripts/index.js"></script>
+	<script type="text/javascript" src="javascripts/contribute_article.js"></script>
+	<script type="text/javascript" src="javascripts/nav_article_click.js"></script>
+	<script type="text/javascript" src="javascripts/usersignin_username.js"></script>
+
+</head>
+<body>
+	<div class="index">
+		<header class="flex_around">
+			<div class="content_l">
+				<div class="logol">
+					<img src="images/indexlogol.png">
+				</div>
+				<div class="personal">
+					<h2>罗广的个人博客</h2>
+					<div>关注跨平台技术与游戏开发</div>
+				</div>
+			</div>
+			<div class="textbox">
+				<ul>
+				<li>最怕一生碌碌无为，还说平凡难能可贵!</li>
+				<li>摘自----网易云音乐</li>
+				</ul>
+			</div>
+			<div id="logor"></div>
+		</header>
+		<nav>
+			<ul id="navul">
+				<li><div><a href="index.html">网站首页</a></div></li>
+				<li>
+					<div><a href="classification.html">生活笔记</a></div>
+					<div>
+						<a href="classification.html">个人随笔</a>
+						<a href="classification.html">个人日记</a>
+						<a href="">个人介绍</a>
+					</div>
+				</li>
+				<li>
+					<div><a href="classification.html">技术杂谈</a></div>
+					<div>
+						<a href="classification.html">mysql</a>
+						<a href="classification.html">jquery</a>
+						<a href="classification.html">css3</a>
+						<a href="classification.html">node.js</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="classification.html">IT资讯</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="leave_message.html">赞助作者</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a target="" href="">给我留言</a>
+					</div>
+				</li>
+			</ul>
+			<div class="signin">
+				<a href="contribute.html">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-tougao"></use>
+					</svg>
+					投稿
+				</a>
+				<a href="signin.html">
+					<svg class="icon" aria-hidden="true">
+					    <use xlink:href="#icon-kaiguan"></use>
+					</svg>
+				<P></P>
+				</a>
+			</div>
+		</nav>
+		<div class="font flex_between">
+			<article>
+				<form action="../contribute_article_backstage"
+				enctype="multipart/form-data" method="post">
+					<ul>
+						<li>
+							<span>文章图片：</span>
+							<div>
+								<input name="img_upload" class="getimg" type="file">
+								<span>选择一张图片插入文章</span>
+							</div>
+						</li>
+						<li>
+							<span>文章标签：</span>
+							<div>
+								<input name="article_tag" list="url_list" type="text" placeholder="请将文章进行分类">
+								<datalist id="url_list">
+									<option label="IT资讯">IT资讯</option>
+									<option label="生活笔记">个人随笔</option>
+									<option label="生活笔记">个人日记</option>
+									<option label="技术杂谈">mysql</option>
+									<option label="技术杂谈">jquery</option>
+									<option label="技术杂谈">node.js</option>
+									<option label="技术杂谈">css</option>
+									<option label="技术杂谈">css3</option>
+
+								</datalist>
+								<span>必填选项！如html,mysql</span>
+							</div>
+						</li>
+						<li>
+							<span>作者姓名：</span>
+							<div>
+								<input name="article_author" type="text" placeholder="此处留名">
+								<span>必填选项！文章的作者</span>
+							</div>
+						</li>
+						<li>
+							<span>文章题目：</span>
+							<div>
+								<input name="article_title" type="text" placeholder="人人都有成为标题党的潜质">
+							</div>
+						</li>
+						<li>
+							<span>文章来源：</span>
+							<div>
+								<input name="article_url"  type="text" placeholder="请填写url地址">
+								<span>如果文章来源于网络,可选择填写url地址</span>
+							</div>
+						</li>
+						<li>
+							<span>正文内容：</span>
+							<div>
+								<textarea class="form_textarea" name="article_contents" placeholder="请填写文章"></textarea>
+							</div>
+						</li>
+						<li>
+							<input type="submit" class="form_submit" value="提交文章">
+							<input type="reset" value="重置表单">
+						</li>
+					</ul>
+				</form>
+			</article>
+			<div class="else">
+				<div class="focusbork">
+					<header><span>关注博客</span></header>
+					<div class="content">
+						<ul>
+							<li>
+								邮箱订阅：<a target="_blank" href="http://gd.passport.189.cn/UDBSelf/" title="17759500581@189.cn"></a>
+							</li>
+							<li>
+								QQ联系：<a target="_blank" href="https://connect.qq.com/widget/wpa/chat.html?tuin=947580181&sigT=3aecd35d8dbc5f1fd2262b348d5040a80fc8ea396f287efeae14595aef90a4eb2feaa6093041702f17d840ded14de3c8&sigU=37ea7a757a254e6cec1948dda22fd0e1cba6c068f017157081f32e51921b341334ade9e5f510f24b" title="LG的QQ1281696080"></a>
+							</li>
+							<li>
+								加入QQ群：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5hFMpU9" title="QQ交流群570946165"></a>
+							</li>
+							<li>
+								微信联系：<a target="_blank" href="https://wx.qq.com/" title="LG的微信17759500581"></a>
+							</li>
+							<li>
+								关注微博：<a target="_blank" href="http://weibo.com/u/5315384135/home?topnav=1&wvr=6" title="关注LG的新浪微博17759500581"></a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+				<div class="click_rank">
+					<header><span>点击排行榜</span></header>
+					<ul>
+						<li>
+							<span>1</span><a href="article_detail.html"></a>
+							</li>
+						<li>
+							<span>2</span><a href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>3</span><a href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>4</span><a href="article_detail.html"></a>
+						</li>
+						<li>
+							<span>5</span><a href="article_detail.html" title="55555555555"></a>
+						</li>
+						<li>
+							<span>6</span><a href="article_detail.html" title="66666666666"></a>
+						</li>
+					</ul>	
+				</div>
+				<div class="tags">
+					<header><span>标签云</span></header>
+					<ul>
+						<li>
+							<a href="classification.html">css</a>
+						</li>
+						<li>
+							<a href="classification.html">html</a>
+						</li>
+						<li>
+							<a href="classification.html">javascript</a>
+						</li>
+						<li>
+							<a href="classification.html">html5</a>
+						</li>
+						<li>
+							<a href="classification.html">css3</a>
+						</li>
+						<li>
+							<a href="classification.html">node.js</a>
+						</li>
+						<li>
+							<a href="classification.html">mysql</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sharelink">
+					<header><span>友情链接</span></header>
+					<ul>
+						<li>
+							<a target="_blank" href="http://v5dyw.com/">v5订阅网</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.phpernote.com/">PHP程序员的笔记</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://ip.zdaye.com/">代理IP</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.sucaihuo.com/">html5网站模板</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.weixianmanbu.com/">黑客技术博客</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.5imb.com/">网站模板</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.php230.com/">IT程序员</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.aiihu.cn/">爱虎网</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.itjie.com/">IT业界</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://nodejs.org/en/">Node.js</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.npmjs.com/">npmjs</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.iconfont.cn/">iconfont矢量图标</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="flex_between">
+		<div class="footer_center">design by:LG</div>
+	</footer>
+	<button href="" class="return">^</button>
+</body>
+</html>
